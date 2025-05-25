@@ -38,7 +38,7 @@ const SandwichSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                         viewport={{ once: true }}
-                        className="text-4xl lg:text-5xl text-[#4a4a4a] font-light mb-4"
+                        className="text-4xl lg:text-5xl text-[#4a4a4a] font-bold mb-4"
                         style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
                         The Jibarito sandwich
@@ -48,7 +48,7 @@ const SandwichSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
                         viewport={{ once: true }}
-                        className="text-sm text-[#8b7355] font-light tracking-[0.3em] uppercase"
+                        className="text-md text-[#8b7355] font-bold tracking-[0.1em] uppercase"
                     >
                         THE BEST SANDWICH YOU&#39;VE EVER TASTED!
                     </motion.p>
@@ -81,7 +81,7 @@ const SandwichSection = () => {
                                     />
                                 </div>
                                 <h4
-                                    className="text-xl text-[#8b7355] font-light"
+                                    className="text-2xl text-[#8b7355] font-bold"
                                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                                 >
                                     {ingredient.title}
@@ -135,9 +135,9 @@ const SandwichSection = () => {
                                 viewport={{ once: true }}
                                 className="bg-white/80 backdrop-blur-sm p-6 shadow-lg text-center w-52 h-52 flex flex-col justify-center"
                             >
-                                <p className="text-sm text-[#8b7355] font-light tracking-wider uppercase mb-2">PREP</p>
+                                <p className="text-md text-[#8b7355] font-bold tracking-wider uppercase mb-2">PREP</p>
                                 <p
-                                    className="text-4xl text-[#8b7355] font-light"
+                                    className="text-5xl text-[#8b7355] font-bold"
                                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                                 >
                                     15
@@ -153,9 +153,9 @@ const SandwichSection = () => {
                                 viewport={{ once: true }}
                                 className="bg-white/80 backdrop-blur-sm p-6 shadow-lg text-center w-52 h-52 flex flex-col justify-center"
                             >
-                                <p className="text-sm text-[#8b7355] font-light tracking-wider uppercase mb-2">COOK</p>
+                                <p className="text-md text-[#8b7355] font-bold tracking-wider uppercase mb-2">COOK</p>
                                 <p
-                                    className="text-4xl text-[#8b7355] font-light"
+                                    className="text-5xl text-[#8b7355] font-bold"
                                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                                 >
                                     35
@@ -182,9 +182,9 @@ const SandwichSection = () => {
                                     }}
                                 />
                                 <div className="relative z-10">
-                                    <p className="text-sm text-[#c4a882] font-light tracking-wider uppercase mb-2">READY IN</p>
+                                    <p className="text-md text-[#c4a882] font-bold tracking-wider uppercase mb-2">READY IN</p>
                                     <p
-                                        className="text-4xl text-[#c4a882] font-light"
+                                        className="text-5xl text-[#c4a882] font-bold"
                                         style={{ fontFamily: "'Cormorant Garamond', serif" }}
                                     >
                                         50
