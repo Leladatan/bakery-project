@@ -106,7 +106,7 @@ const TastyPancakesSection = () => {
                                     />
 
                                     {/* Vertical Star Rating */}
-                                    <div className="absolute top-4 left-4 flex flex-col space-y-1">
+                                    <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-1">
                                         {[...Array(5)].map((_, index) => (
                                             <motion.div
                                                 key={index}
