@@ -1,6 +1,7 @@
 import HeroSection from "@/views/main/hero";
 import ArtOfCakesSection from "@/views/main/art-of-cakes";
 import TastyPancakesSection from "@/views/main/tasty-pancakes";
+import SandwichSection from "@/views/main/sandwich";
 
 const MainPage = () => {
     return (
@@ -8,6 +9,7 @@ const MainPage = () => {
             <HeroSection/>
             <ArtOfCakesSection/>
             <TastyPancakesSection/>
+            <SandwichSection/>
         </main>
     );
 };
