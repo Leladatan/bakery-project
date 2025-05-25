@@ -1,5 +1,6 @@
 "use client";
 
+import {Fragment} from "react";
 import { motion } from "framer-motion";
 import { Twitter, Facebook, Instagram } from "lucide-react";
 
@@ -33,10 +34,9 @@ const Header = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="hidden lg:flex items-center space-x-12"
             >
-                {["WELCOME", "MENU", "RESERVATIONS", "NEWS", "CONTACT"].map(
-                    (item, index) => (
+                {["WELCOME", "MENU", "RESERVATIONS", "NEWS", "CONTACT"].map((item, index, arr) => (
+                    <Fragment key={item}>
                         <motion.a
-                            key={item}
                             href="#"
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -45,9 +45,19 @@ const Header = () => {
                         >
                             {item}
                         </motion.a>
-                    )
-                )}
+                        {index < arr.length - 1 && (
+                            <span
+                                aria-hidden="true"
+                                className="text-white text-sm font-light tracking-[0.2em] select-none"
+                                style={{ userSelect: "none" }}
+                            >
+                    &nbsp;~&nbsp;
+                </span>
+                        )}
+                    </Fragment>
+                ))}
             </motion.nav>
+
 
             {/* Social Icons */}
             <motion.div
@@ -67,7 +77,7 @@ const Header = () => {
                         whileTap={{ scale: 0.95 }}
                         className="text-white hover:text-white/80 transition-colors duration-300"
                     >
-                        <Icon size={18} />
+                        <Icon size={20} />
                     </motion.a>
                 ))}
             </motion.div>
