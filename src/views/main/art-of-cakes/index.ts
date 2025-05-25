@@ -1,0 +1,1 @@
+export {default} from "./ui/art-of-cakes-section";
